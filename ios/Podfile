@@ -1,0 +1,38 @@
+platform :ios, '9.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+def capacitor_pods
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'Capacitor', :path => '../node_modules/@capacitor/ios'
+  pod 'CapacitorCordova', :path => '../node_modules/@capacitor/ios'
+end
+
+target 'Plugin' do
+  capacitor_pods
+  pod 'YocoSDK', '~> 4.5.0-rc2'
+end
+
+target 'PluginTests' do
+  capacitor_pods
+  pod 'YocoSDK', '~> 4.5.0-rc2'
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    if target.name == 'YocoSDK' ||
+      target.name == 'Alamofire' ||
+      target.name == 'CocoaLumberjack' ||
+      target.name == 'Gloss' ||
+      target.name == 'ReSwift' ||
+      target.name == 'Reachability' ||
+      target.name == 'SwiftSignatureView' ||
+      target.name == 'lottie-ios'
+      target.build_configurations.each do |config|
+        config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+      end
+    end
+  end
+end

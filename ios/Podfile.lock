@@ -1,0 +1,59 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Capacitor (2.4.7):
+    - CapacitorCordova
+  - CapacitorCordova (2.4.7)
+  - CocoaLumberjack/Core (3.7.0)
+  - CocoaLumberjack/Swift (3.7.0):
+    - CocoaLumberjack/Core
+  - Gloss (3.2.1)
+  - lottie-ios (3.2.1)
+  - Reachability (3.2)
+  - ReSwift (6.0.0)
+  - SwiftSignatureView (2.2.3)
+  - YocoSDK (4.5.0-rc2):
+    - Alamofire (~> 4.9)
+    - CocoaLumberjack/Swift
+    - Gloss (~> 3.2)
+    - lottie-ios (~> 3.1)
+    - Reachability
+    - ReSwift (~> 6.0)
+    - SwiftSignatureView (~> 2.2)
+
+DEPENDENCIES:
+  - "Capacitor (from `../node_modules/@capacitor/ios`)"
+  - "CapacitorCordova (from `../node_modules/@capacitor/ios`)"
+  - YocoSDK (~> 4.5.0-rc2)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - CocoaLumberjack
+    - Gloss
+    - lottie-ios
+    - Reachability
+    - ReSwift
+    - SwiftSignatureView
+    - YocoSDK
+
+EXTERNAL SOURCES:
+  Capacitor:
+    :path: "../node_modules/@capacitor/ios"
+  CapacitorCordova:
+    :path: "../node_modules/@capacitor/ios"
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Capacitor: 4cd7b342d5a15b1f6f333d687358953afd7b2d8b
+  CapacitorCordova: 2c9d6e28d9d86c4da087fa2c3537c1841954bb12
+  CocoaLumberjack: e8955b9d337ac307103b0a34fd141c32f27e53c5
+  Gloss: 2cda64dd31f12d8c7905273c7883c63ee92bfee3
+  lottie-ios: 106e92eaf11fbed0a76590b4cdb9b5ec26123ff7
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  ReSwift: 14e6f9409fe6bdc635e588208296a01f43b959c9
+  SwiftSignatureView: 5bbee04ed6c0a18aa578ad56d3d157cf9a042a4d
+  YocoSDK: fdddddcf75f9c7e773a58053619fb8b850ef48cf
+
+PODFILE CHECKSUM: 8f5a570a716603f04702ebba49ee0a5f3b0febee
+
+COCOAPODS: 1.10.1
